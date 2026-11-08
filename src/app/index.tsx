@@ -2,12 +2,12 @@ import { useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
 export default function Index() {
-  const [mensaje, setMensaje] = useState('¡Estoy aprendiendo React Native!');
+  const [mensaje, setMensaje] = useState('¡Estoy aprendiendo React Native con mi rpofesora enc lase de moviles!');
 
   return (
     <View style={styles.contenedor}>
       {/* Reto: Título modificado */}
-      <Text style={styles.titulo}>Mi Tarea de React Native</Text>
+      <Text style={styles.titulo}>Mi Tarea de React Native esta del hijuemadres</Text>
       <Text style={styles.mensaje}>{mensaje}</Text>
 
       <Pressable
@@ -15,7 +15,7 @@ export default function Index() {
         /* Reto: Mensaje que aparece al pulsar modificado */
         onPress={() => setMensaje('¡Reto completado con éxito!')} 
       >
-        <Text style={styles.textoBoton}>Púlsame</Text>
+        <Text style={styles.textoBoton}>Púlsame que me gusta</Text>
       </Pressable>
     </View>
   );
@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   boton: {
-    backgroundColor: '#10b981', // Reto: Color cambiado a verde esmeralda
+    backgroundColor: '#8f10b9', // Reto: Color cambiado a verde esmeralda
     paddingVertical: 13,
     paddingHorizontal: 25,
     borderRadius: 10,
